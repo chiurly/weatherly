@@ -1,0 +1,33 @@
+#weather-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 32px;
+}
+
+#weather {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+#location,
+#temperature {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+table {
+	margin-top: 16px;
+}
+
+table,
+th,
+td {
+	padding: 4px 8px;
+	border: 1px solid var(--light);
+	border-collapse: collapse;
+}
