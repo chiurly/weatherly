@@ -35,8 +35,8 @@ export class AppComponent implements OnInit {
 
 	loadWeather(location: string) {
 		this.weatherService.getWeather(location).subscribe({
-			next: response => {
-				this.weather = response;
+			next: (weather: Weather) => {
+				this.weather = weather;
 				this.locationInput = '';
 			},
 			error: (err: HttpErrorResponse) => {

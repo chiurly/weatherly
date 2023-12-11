@@ -3,7 +3,8 @@
 		<input type="text" name="location" placeholder="Search location" [(ngModel)]="locationInput">
 	</form>
 
-	<div id="weather" *ngIf="weather">
+	@if (weather) {
+	<div id="weather">
 		<div id="location">{{weather.location.name}}</div>
 		<div id="temperature">{{weather.current.temp_c}} °C</div>
 		<img id="weather-icon" src={{weather.current.condition.icon}}>
@@ -26,6 +27,7 @@
 			</tr>
 		</table>
 	</div>
+	} @else {
+	<div>Weather not found</div>
+	}
 </div>
-
-<router-outlet></router-outlet>
