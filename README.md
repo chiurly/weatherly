@@ -8,4 +8,4 @@ Weatherly is a web app that I created to start learning [Angular](https://angula
 
 1. Run `npm i` to install dependencies
 2. Run `ng serve` to start a dev server
-3. Navigate to `http://localhost:4200/`
+3. Navigate to http://localhost:4200/
